@@ -13,12 +13,14 @@ function Home() {
           />
           <div className="home_row">
             <Product
+              id="1234"
               title="Harry Potter and the Sorcerer's Stone"
               price={29.99}
               image="/harry_potter.jpg"
               rating={4}
             />
             <Product
+              id="1235"
               title="Green Ranger Funko Pop"
               price={11.99}
               image="/green_ranger.jpg"
@@ -27,6 +29,7 @@ function Home() {
           </div>
           <div className="home_row">
             <Product
+              id="1236"
               title="Apple iPad Pro (12.9-inch, Wi-Fi + Celluler, 256GV)"
               price={999.0}
               image="/ipad.jpeg"
@@ -34,12 +37,14 @@ function Home() {
             />
 
             <Product
+              id="1237"
               title="Samsung QLED Monitor Curved"
               price={649.0}
               image="/samsung_monitor.jpg"
               rating={4}
             />
             <Product
+              id="1238"
               title="Wilson Evolution Game Basketball"
               price={64.99}
               image="/basketball.jpeg"
@@ -48,6 +53,7 @@ function Home() {
           </div>
           <div className="home_row">
             <Product
+              id="1239"
               title="All-Clad Brushed D5 Stainless Cookware Set"
               price={949.95}
               image="/all_clad.jpg"
