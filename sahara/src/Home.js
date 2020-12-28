@@ -11,14 +11,16 @@ function Home() {
             src="https://images-eu.ssl-images-amazon.com/images/G/02/digital/video/merch2016/Hero/Covid19/Generic/GWBleedingHero_ENG_COVIDUPDATE__XSite_1500x600_PV_en-GB._CB428684220_.jpg"
             alt=""
           />
+
           <div className="home_row">
             <Product
-              id="1234"
-              title="Harry Potter and the Sorcerer's Stone"
-              price={29.99}
-              image="/harry_potter.jpg"
+              id="1237"
+              title="Samsung QLED Monitor Curved"
+              price={649.00}
+              image="/samsung_monitor.jpg"
               rating={4}
             />
+
             <Product
               id="1235"
               title="Green Ranger Funko Pop"
@@ -31,18 +33,18 @@ function Home() {
             <Product
               id="1236"
               title="Apple iPad Pro (12.9-inch, Wi-Fi + Celluler, 256GV)"
-              price={999.0}
+              price={999.00}
               image="/ipad.jpeg"
               rating={4}
             />
-
             <Product
-              id="1237"
-              title="Samsung QLED Monitor Curved"
-              price={649.0}
-              image="/samsung_monitor.jpg"
+              id="1234"
+              title="Harry Potter and the Sorcerer's Stone"
+              price={29.99}
+              image="/harry_potter.jpg"
               rating={4}
             />
+
             <Product
               id="1238"
               title="Wilson Evolution Game Basketball"

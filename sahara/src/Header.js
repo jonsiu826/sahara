@@ -11,17 +11,20 @@ function Header() {
     return (
       <div className="header">
         <Link to="/">
-            <div className="header_logo">SAHARA</div>
+          <div className="header_logo">SAHARA</div>
         </Link>
         <div className="header_search">
           <input className="header_search_input" type="text" />
-          <SearchIcon className="header_searchIcon"/>
+          <SearchIcon className="header_searchIcon" />
         </div>
+
         <div className="header_nav">
-          <div className="header_option">
-            <span className="header_optionLineOne">Hello Guest</span>
-            <span className="header_optionLineTwo">Sign In</span>
-          </div>
+          <Link to="/login">
+            <div className="header_option">
+                <span className="header_optionLineOne">Hello Guest</span>
+                <span className="header_optionLineTwo">Sign In</span>
+            </div>
+          </Link>
           <div className="header_option">
             <span className="header_optionLineOne">Returns</span>
             <span className="header_optionLineTwo">& Orders</span>
@@ -32,8 +35,10 @@ function Header() {
           </div>
           <Link to="/checkout">
             <div className="header_optionBasket">
-                <ShoppingBasketIcon/>
-                <span className="header_optionLineTwo header_basketCount">{basket?.length}</span>
+              <ShoppingBasketIcon />
+              <span className="header_optionLineTwo header_basketCount">
+                {basket?.length}
+              </span>
             </div>
           </Link>
         </div>
