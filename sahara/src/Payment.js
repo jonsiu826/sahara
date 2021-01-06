@@ -4,7 +4,7 @@ import CheckoutProduct from './CheckoutProduct';
 import { useStateValue } from './StateProvider';
 
 function Payment() {
-    const [{basket, user}, dispatch] = useStateValue();
+    const [{ basket, user }, dispatch] = useStateValue();
     return (
       <div className="payment">
         <div className="payment_container">
@@ -23,7 +23,7 @@ function Payment() {
                   <h3>Review Items and Delivery</h3>
               </div>
               <div className='payment_items'>
-                    {basket.map(item => {
+                    {basket.map(item => (
                         <CheckoutProduct 
                             id={item.id}
                             title={item.title}
@@ -31,7 +31,7 @@ function Payment() {
                             price={item.price}
                             rating={item.rating}
                         />
-                    })}
+                    ))}
               </div>
           </div>
           <div className="payment_section">
