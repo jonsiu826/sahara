@@ -3,6 +3,7 @@ import './App.css';
 import React, { useEffect } from "react";
 import Header from './Header';
 import Home from './Home';
+import Orders from './Orders';
 import Payment from './Payment';
 import Checkout from './Checkout'
 import { BrowserRouter as Router, Switch, Route}
@@ -43,6 +44,10 @@ function App() {
     <Router>
       <div className="App">
         <Switch>
+          <Route path="/orders">
+            <Header />
+            <Orders />
+          </Route>
           <Route path="/login">
             <Login />
           </Route>
