@@ -18,7 +18,10 @@ function Header() {
     return (
       <div className="header">
         <Link to="/">
-          <div className="header_logo">SAHARA</div>
+          <img className="header_logo"
+          src="/sahara.png"
+          />
+          
         </Link>
         <div className="header_search">
           <input className="header_search_input" type="text" />
