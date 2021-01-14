@@ -1,22 +1,52 @@
 import React from 'react';
 import "./Home.css";
-import Product from './Product'
+import Product from './Product';
+import Carousel from "react-elastic-carousel";
 
 function Home() {
+
+  const photos = [
+    {
+      url:
+        "https://images-na.ssl-images-amazon.com/images/G/01/AMAZON_FASHION/2021/journeys/MGY0YzMzNTMt/MGY0YzMzNTMt-NTM1Y2E3OTYt-w1500._CB411425260_.jpg",
+    },
+    {
+      url:
+        "https://images-na.ssl-images-amazon.com/images/G/01/kindle/journeys/Nzg3NzIxZDct/Nzg3NzIxZDct-OTgzNWJkZmYt-w1500._CB412095319_.jpg",
+    },
+
+    {
+      url:
+        "https://images-na.ssl-images-amazon.com/images/G/01/audible/A4-1000_UseCase_Gateway_Desktop_1500x600_EN._CB406069717_.jpg",
+    },
+    {
+      url:
+        "https://images-na.ssl-images-amazon.com/images/G/01/test/gp/s/e/v/e/n/t/s/m/a/n/a/g/e/r/HP_DesktopHero_VDay_MascGift_1500x600-US-en._CB413287176_.jpg",
+    }
+  ];
+
+   const breakPoints = [
+     { width: 400, itemsToShow: 1 },
+   ];
     return (
       <div className="home">
         <div className="home_container">
-          <img
-            className="home_image"
-            src="https://images-eu.ssl-images-amazon.com/images/G/02/digital/video/merch2016/Hero/Covid19/Generic/GWBleedingHero_ENG_COVIDUPDATE__XSite_1500x600_PV_en-GB._CB428684220_.jpg"
-            alt=""
-          />
+          <Carousel className="home_image" breakPoints={breakPoints}>
+            {photos.map((photo, idx) => {
+              return (
+                <div>
+                  <img className="carousel-shoe-photo" src={photo.url} />
+                  <p className="carousel-shoe-name">{photo.name}</p>
+                </div>
+              );
+            })}
+          </Carousel>
 
           <div className="home_row">
             <Product
               id="1237"
               title="Samsung QLED Monitor Curved"
-              price={649.00}
+              price={649.0}
               image="/samsung_monitor.jpg"
               rating={4}
             />
@@ -33,7 +63,7 @@ function Home() {
             <Product
               id="1236"
               title="Apple iPad Pro (12.9-inch, Wi-Fi + Celluler, 256GV)"
-              price={999.00}
+              price={999.0}
               image="/ipad.jpeg"
               rating={4}
             />
