@@ -21,7 +21,6 @@ function Header() {
           <img className="header_logo"
           src="/sahara.png"
           />
-          
         </Link>
         <div className="header_search">
           <input className="header_search_input" type="text" />
